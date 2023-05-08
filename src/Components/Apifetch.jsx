@@ -2,7 +2,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Apifetch() {
+const Apifetch = () => {
   const [joke , setJoke ] = useState('')
   useEffect(()=>{
     getJoke()
@@ -23,7 +23,7 @@ function Apifetch() {
       <div className="container">
         <div className='row mt-5 mx-auto pt-5 w-100'>
             <div className='col-12 text-center mt-5 pt-5 border rounded border-info'>
-        <h3 className="text-center fw-lighter">JOKES APART 😀😁🤣</h3>
+        <h3 className="text-center fw-lighter"><b className='text-danger'>JOKES APART</b> 😀😁🤣</h3>
         <div className="text-center fw-bolder fs-5 mt-3">{joke}</div>
 
         <div className=''>
